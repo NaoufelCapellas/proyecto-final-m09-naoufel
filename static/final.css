@@ -1,0 +1,97 @@
+/* Estilos CSS para final.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('/static/img/fondoprivat.jpg'); /* Ruta a tu imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Esto asegura que la imagen de fondo permanezca fija mientras se desplaza el contenido */
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    min-height: 100vh; /* Hace que el cuerpo ocupe al menos el 100% del alto de la ventana */
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffe066;
+}
+
+.content {
+    flex: 1; /* Hace que el contenido ocupe todo el espacio disponible */
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto; /* Coloca el pie de página al final */
+}
+
+/* Estilos para el nombre de usuario */
+.username {
+    float: right; /* Alinear a la derecha */
+    color: #ffe066; /* Color amarillo */
+    font-weight: bold; /* Fuente en negrita */
+}
+
+/* Estilos para el mensaje de agradecimiento */
+.gracias {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+/* Estilos para el nombre de usuario */
+.username {
+    float: right; /* Alinear a la derecha */
+    color: #ffe066; /* Color amarillo */
+    font-weight: bold; /* Fuente en negrita */
+}
+/* Estilos para el recuadro amarillo */
+.recuadro-amarillo {
+    background-color: #ffe066;
+    padding: 20px;
+    border: 2px solid black;
+    margin-top: 20px; /* Para separarlo del contenido superior */
+}
+

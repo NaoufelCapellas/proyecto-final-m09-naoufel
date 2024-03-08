@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='privat.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>¡Bienvenido, viajero!</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Destinos</a></li>
+                    <li><a href="#">Mis Viajes</a></li>
+                    <li><span class="username">{{ usuario }}</span></li>
+                    <li><a href="{{ url_for('logout') }}">Cerrar sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="content">
+        <div class="container">
+            <form action="{{ url_for('final') }}" method="post">
+                <div class="form-group">
+                    <label for="Opciones">¿Qué buscas?:</label>
+                    <select id="Opciones" name="Opciones">
+                        <option value="Aventura">Aventura</option>
+                        <option value="Relax and resort">Relax and resort</option>
+                        <option value="Turismo">Turismo</option>
+                        <option value="Playa">Playa</option>
+                        <option value="Montaña">Montaña</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="paises">Países:</label>
+                    <select id="paises" name="paises">
+                        <option value="espana">España</option>
+                        <option value="francia">Tailandia</option>
+                        <option value="italia">Japon</option>
+                        <option value="alemania">Brasil</option>
+                        <option value="reino-unido">EEUU</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tipo-hotel">Tipo de hotel:</label>
+                    <select id="tipo-hotel" name="tipo-hotel">
+                        <option value="1-estrella">1 Estrella</option>
+                        <option value="2-estrellas">2 Estrellas</option>
+                        <option value="3-estrellas">3 Estrellas</option>
+                        <option value="4-estrellas">4 Estrellas</option>
+                        <option value="5-estrellas">5 Estrellas</option>
+                    </select>
+                </div>
+                <button type="submit">Finalizar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Viajes Únicos - Todos los derechos reservados de autor Naoufel </p>
+        </div>
+    </footer>
+</body>
+</html>
